@@ -17,18 +17,19 @@ This repository contains a FastAPI application that serves a machine learning mo
 ### Example Input:
 \`\`\`json
 {
-  "mean_radius": 17.99,
-  "mean_texture": 10.38,
-  "mean_perimeter": 122.8,
-  "mean_area": 1001,
-  "mean_smoothness": 0.1184
+    "feature_values": {
+        "radius_mean": 14.3,
+        "texture_mean": 20.1,
+        "perimeter_mean": 132.4,
+        "area_mean": 1010.3,
+        "smoothness_mean": 0.1184
+    }
 }
 \`\`\`
 
 ### Example Output:
 \`\`\`json
 {
-  "prediction": "Malignant",
-  "probability": 0.95
+  "predicted_cancer_type": "Malignant"
 }
 \`\`\`
